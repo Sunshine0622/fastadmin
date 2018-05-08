@@ -1,0 +1,27 @@
+[ 2018-05-06T21:04:29+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.523851s ] mysql:host=101.200.91.203;dbname=fastadmin;charset=utf8
+[ 2018-05-06T21:04:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'sales' [ RunTime:0.102149s ]
+[ 2018-05-06T21:04:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_sales' [ RunTime:0.084742s ]
+[ 2018-05-06T21:04:29+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_sales' ORDER BY ORDINAL_POSITION [ RunTime:0.044413s ]
+[ 2018-05-06T21:06:09+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.041911s ] mysql:host=101.200.91.203;dbname=fastadmin;charset=utf8
+[ 2018-05-06T21:06:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'sales' [ RunTime:0.014708s ]
+[ 2018-05-06T21:06:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_sales' [ RunTime:0.014691s ]
+[ 2018-05-06T23:32:00+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.052153s ] mysql:host=101.200.91.203;dbname=fastadmin;charset=utf8
+[ 2018-05-06T23:32:00+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'source_cpid' [ RunTime:0.024932s ]
+[ 2018-05-06T23:32:00+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_source_cpid' [ RunTime:0.017284s ]
+[ 2018-05-06T23:32:00+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_source_cpid' ORDER BY ORDINAL_POSITION [ RunTime:0.021980s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.024977s ] mysql:host=101.200.91.203;dbname=fastadmin;charset=utf8
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015621s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'source' LIMIT 1 [ RunTime:0.018466s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'source' , 'source' , 'fa fa-list' , '' , 1 , 'normal' , 1525620721 , 1525620721) [ RunTime:0.018489s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'source/cpid' LIMIT 1 [ RunTime:0.012748s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (88 , 'source/cpid' , '合作渠道' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1525620721 , 1525620721) [ RunTime:0.017940s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'source/cpid/index' LIMIT 1 [ RunTime:0.010224s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'source/cpid/add' LIMIT 1 [ RunTime:0.010968s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'source/cpid/edit' LIMIT 1 [ RunTime:0.010796s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'source/cpid/del' LIMIT 1 [ RunTime:0.014078s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'source/cpid/multi' LIMIT 1 [ RunTime:0.068281s ]
+[ 2018-05-06T23:32:01+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 89 , 'source/cpid/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1525620721 , 1525620721) [ RunTime:0.024653s ]
+[ 2018-05-06T23:32:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 89 , 'source/cpid/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1525620721 , 1525620721) [ RunTime:0.297703s ]
+[ 2018-05-06T23:32:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 89 , 'source/cpid/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1525620722 , 1525620722) [ RunTime:0.005681s ]
+[ 2018-05-06T23:32:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 89 , 'source/cpid/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1525620722 , 1525620722) [ RunTime:0.005056s ]
+[ 2018-05-06T23:32:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 89 , 'source/cpid/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1525620722 , 1525620722) [ RunTime:0.005594s ]
